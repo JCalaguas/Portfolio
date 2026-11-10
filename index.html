@@ -1,299 +1,284 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portfolio</title>
-    <link rel="stylesheet" href="styles.css" />
-  </head>
-  <body>
-    <!-- NAV SECTION -->
-<div id="hamburger" class="hamburger-menu">
-  <div class="bar"></div>
-  <div class="bar"></div>
-  <div class="bar"></div>
-  <nav>
-    <ul class="nav-links">
-      <li class="portfolio"><a href="#portfolio">Portfolio</a></li>
-      <li><a href="#skills">Skills</a></li>
-      <li><a href="#home">Home</a></li>
-      <li><a href="#about">About</a></li>
-      <li><a href="#expertise">Expertise</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-  </nav>
-</div>
-<nav>
-  <ul class="nav-links">
-    <li class="portfolio"><a href="#portfolio">Portfolio</a></li>
-    <li><a href="#skills">Skills</a></li>
-    <li><a href="#home">Home</a></li>
-    <li><a href="#about">About</a></li>
-    <li><a href="#expertise">Expertise</a></li>
-    <li><a href="#contact">Contact</a></li>
-  </ul>
-</nav>
-    <!-- HOME SECTION -->
-    <div id="home" class="home">
-      <div class="overlap">
-        <div class="ellipse"></div>
-        <div class="div"></div>
-        <img class="me" src="img/me.png" alt="Profile Picture" />
-      </div>
-      <div class="overlap-group">
-        <div class="text-wrapper">Hello It’s Me</div>
-        <div class="text-wrapper-2">Justine Calaguas</div>
-        <p class="a-full-stack">
-          <span class="span">A Full Stack </span> <span class="developer">Developer</span>
-        </p>
-      </div>
-      <div class="overlap-2">
-        <p class="p">
-          I aspire to master technologies, improve my problem-solving skills,  lead development projects, and grow into a software architect. I aim to build innovative applications that can help out daily life prosper.
-        </p>
-        <a href="mailto:jlcalaguas@gmail.com">
-          <img class="image" src="img/image.png" alt="Image 1" />
-        </a>
-        <a href="https://www.facebook.com/justine.calaguas.3/" target="_blank">
-          <img class="img" src="img/image2.png" alt="Image 2" />
-        </a>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Justine Calaguas</title>
+  <meta name="description" content="Justine Luis Calaguas, Computer Science student at Holy Angel University. Computer vision, machine learning and agentic coding.">
+  <meta name="theme-color" content="#0A1A20">
+  <meta property="og:title" content="Justine Calaguas">
+  <meta property="og:description" content="Computer vision · Machine learning · Agentic coding">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://jcalaguas.github.io/Portfolio/">
+  <meta property="og:image" content="https://jcalaguas.github.io/Portfolio/og-image.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@500&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script>
+    try {
+      var t = localStorage.getItem("theme");
+      if (t === "light" || t === "dark") document.documentElement.setAttribute("data-theme", t);
+    } catch (e) {}
+  </script>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+
+  <header class="nav" id="top">
+    <div class="wrap nav-inner">
+      <a class="logo" href="#top" aria-label="Back to top">
+        <span class="logo-mark">JC</span>
+      </a>
+      <nav class="nav-links" id="nav-links" aria-label="Main">
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#learning">Learning</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <div class="nav-actions">
+        <button class="icon-btn" id="theme-toggle" type="button" aria-label="Switch to light theme">
+          <svg class="i-sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
+          <svg class="i-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 14.5A8 8 0 0 1 9.5 4a8 8 0 1 0 10.5 10.5z"/></svg>
+        </button>
+        <button class="icon-btn menu-btn" id="menu-btn" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="nav-links">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+        </button>
       </div>
     </div>
+  </header>
 
-
-    <!-- ABOUT ME SECTION -->
-    <div id="about" class="about-me">
-      <p class="div"><span class="text-wrapper">About </span> <span class="span">me</span></p>
-      <p class="p">Again I am Justine Luis S. Calaguas, a Bachelor of Science in Computer Science degree holder from Holy Angel University.</p>
-      <div class="overlap">
-        <p class="text-wrapper-2">
-          I have a deep passion for analysing data and coming up with solutions or strategies that improve customer engagement.
-        </p>
-        <div class="rectangle"></div>
-        <div class="text-wrapper-3" id="seeMoreBtn">See more</div>
-      </div>
-      <div class="modal" id="videoModal">
-        <div class="modal-content">
-          <span class="close">&times;</span>
-          <video controls>
-            <source src="img/seemore.mp4" type="video/mp4">
-            Your browser does not support the video tag.
-          </video>
+  <main id="main">
+    <!-- HERO -->
+    <section class="hero">
+      <div class="wrap hero-inner">
+        <div class="hero-text">
+          <p class="eyebrow">Hi, I'm</p>
+          <h1>Justine Luis Calaguas</h1>
+          <span class="underline" aria-hidden="true"></span>
+          <p class="tagline">Computer vision · Machine learning · Agentic coding</p>
+          <p class="hero-sub">CS student at Holy Angel University. I build things that watch, listen and react to the real world.</p>
+          <div class="hero-cta">
+            <a class="btn btn-primary" href="#projects">See my projects</a>
+            <a class="btn btn-ghost" href="Calaguas_Justine_Resume.pdf" download>Download résumé</a>
+          </div>
+        </div>
+        <div class="hero-visual" aria-hidden="true">
+          <canvas id="mesh"></canvas>
+          <span class="corner tl"></span><span class="corner tr"></span>
+          <span class="corner bl"></span><span class="corner br"></span>
+          <p class="mesh-label"><span class="dot"></span> tracking · eyes open</p>
         </div>
       </div>
-      <div class="overlap-group">
-        <div class="ellipse"></div>
-        <div class="ellipse-2"></div>
-        <img class="me" src="img/me.png" alt="Me" />
-      </div>
-    </div>
+    </section>
 
-    <!-- CORE COMPETENCIES SECTION (centered and fixed border) -->
-    <div class="compentencies">
-      <div id="skills"  class="overlap-group centered">
-        <p class="text-wrapper">
-          I collaborated with peers on coding assignments and software development. These projects helped me develop communication and collaboration which are essential teamwork skills.
-        </p>
-        <div  class="overlap">
-          <img class="image" src="img/image5.png" alt="Competency 1" />
-          <div class="div">Teamwork</div>
+    <!-- ABOUT -->
+    <section class="section" id="about">
+      <div class="wrap about-grid">
+        <div>
+          <p class="kicker">01 · About me</p>
+          <h2>Games got me here.</h2>
+        </div>
+        <div class="about-body">
+          <p>I got into computer science through games. Playing them connected me with people, and somewhere along the way I started wondering how any of it worked. The idea that you could sit at a computer and build a solution to a real problem seemed bizarre to me. It still intrigues me, which is a big part of why I'm here.</p>
+          <p>These days I like building things that react to the real world: a camera that watches for tired eyes, a model that listens for spoken commands. I work a lot with AI coding agents. I plan the work, they help me build it, and I review and test everything before I call it done.</p>
+          <p>Outside of code, I'm usually watching anime, gaming, or picking up random facts I'll bring up at the worst possible moment.</p>
+          <ul class="facts">
+            <li><span>School</span>Holy Angel University</li>
+            <li><span>Program</span>BS Computer Science</li>
+            <li><span>Graduating</span>Expected 2027</li>
+            <li><span>Based in</span>Pampanga, PH</li>
+          </ul>
         </div>
       </div>
-      <div class="overlap-2">
-        <p class="p">
-          Working with different tools, languages, and frameworks across various projects built my technical repertoire, making me more versatile.
-        </p>
-        <img class="img" src="img/image6.png" alt="Experience" />
-        <div class="text-wrapper-2">Experience</div>
-      </div>
-      <div class="overlap-3">
-        <p class="text-wrapper-3">
-          Courses such as Data Structures, Algorithms, and Discrete Mathematics has trained me to break down problems systematically and devise efficient solutions.
-        <div class="overlap-4">
-          <div class="text-wrapper-4">Logical Thinking</div>
-          <img class="image-2" src="img/image7.png" alt="Logical Thinking" />
+    </section>
+
+    <!-- PROJECTS -->
+    <section class="section" id="projects">
+      <div class="wrap">
+        <p class="kicker">02 · Projects</p>
+        <h2>Things I've built</h2>
+
+        <article class="project featured">
+          <div class="project-head">
+            <p class="tag">CS thesis · Team</p>
+            <h3>Driver Drowsiness Detection</h3>
+          </div>
+          <div class="project-body">
+            <dl>
+              <dt>The problem</dt>
+              <dd>Drowsy drivers rarely notice they are drifting off, and many alert systems depend on an internet connection.</dd>
+              <dt>What I did</dt>
+              <dd>Helped design an offline three-part system: a USB camera, a laptop running the detector, and an Android phone that sounds the alarm. I trained the eye classifier (EyeCNN) from scratch in PyTorch on 190,490 eye images from the YawDD and NTHU-DD datasets, and split the data by video so the model couldn't cheat by seeing the same driver twice.</dd>
+            </dl>
+            <ul class="stats">
+              <li><strong>87.3%</strong><span>subject-independent accuracy</span></li>
+              <li><strong>86.21%</strong><span>precision</span></li>
+              <li><strong>5.54%</strong><span>false-alarm rate</span></li>
+            </ul>
+            <div class="project-foot">
+              <ul class="chips"><li>Python</li><li>PyTorch</li><li>OpenCV</li><li>MediaPipe</li></ul>
+              <a class="link" href="https://github.com/kurtzk10/drowsiness-detector" target="_blank" rel="noopener">View repo <span aria-hidden="true">↗</span></a>
+            </div>
+          </div>
+        </article>
+
+        <div class="project-grid">
+          <article class="project">
+            <p class="tag">Intelligent Systems · Team</p>
+            <h3>Speech Command Recognition with RL Threshold Tuning</h3>
+            <dl>
+              <dt>The problem</dt>
+              <dd>A fixed 0.5 confidence threshold is a guess. Too low and the system acts on wrong commands, too high and it ignores real ones.</dd>
+              <dt>What I did</dt>
+              <dd>Worked on the speech module: turning WAV audio into Mel spectrograms with librosa, the CNN classifier, and connecting it to a Q-learning agent.</dd>
+              <dt>Result</dt>
+              <dd>The agent learns the threshold from data instead of guessing, and the project ends with a per-speaker fairness check.</dd>
+            </dl>
+            <div class="project-foot">
+              <ul class="chips"><li>Python</li><li>TensorFlow</li><li>librosa</li><li>Q-learning</li></ul>
+              <a class="link" href="https://github.com/JCalaguas/speech-command-rl-threshold" target="_blank" rel="noopener">View repo <span aria-hidden="true">↗</span></a>
+            </div>
+          </article>
+
+          <article class="project">
+            <p class="tag">Solo</p>
+            <h3>BingeLog</h3>
+            <dl>
+              <dt>The problem</dt>
+              <dd>Losing track of which episode I'm on across all the anime and shows I watch.</dd>
+              <dt>What I did</dt>
+              <dd>Built a full-stack tracker: React and Vite on the front, an Express and PostgreSQL API behind it, and TVMaze search to import shows, with manual entry when search comes up empty.</dd>
+              <dt>Result</dt>
+              <dd>A working tracker for progress, status, ratings and notes, plus a detailed log of exactly which parts AI helped with.</dd>
+            </dl>
+            <div class="project-foot">
+              <ul class="chips"><li>React</li><li>Express</li><li>PostgreSQL</li><li>Docker</li></ul>
+              <a class="link" href="https://github.com/JCalaguas/Bingelog" target="_blank" rel="noopener">View repo <span aria-hidden="true">↗</span></a>
+            </div>
+          </article>
+
+          <article class="project">
+            <p class="tag">Solo</p>
+            <h3>This portfolio</h3>
+            <dl>
+              <dt>The problem</dt>
+              <dd>My old site had a contact form that went nowhere and skill bars with made-up percentages.</dd>
+              <dt>What I did</dt>
+              <dd>Rebuilt it from scratch with AI coding agents, then reviewed and tested every part myself.</dd>
+              <dt>Result</dt>
+              <dd>A fast, framework-free site with light and dark themes that works on any screen size.</dd>
+            </dl>
+            <div class="project-foot">
+              <ul class="chips"><li>HTML</li><li>CSS</li><li>JavaScript</li></ul>
+              <a class="link" href="https://github.com/JCalaguas/Portfolio" target="_blank" rel="noopener">View repo <span aria-hidden="true">↗</span></a>
+            </div>
+          </article>
+        </div>
+
+        <div class="team">
+          <h3 class="team-title">Other team projects</h3>
+          <ul class="team-list">
+            <li>
+              <div><a href="https://github.com/qwertyuipaas/HAUtogo" target="_blank" rel="noopener">HAUtogo</a><span class="role">System tester</span></div>
+              <p>A campus app that shows where professors are in real time using geofencing. I ran 15 test cases and logged 4 defects, retesting each fix until it passed.</p>
+            </li>
+            <li>
+              <div><a href="https://github.com/Ryence07/IMODSIM" target="_blank" rel="noopener">Sleep vs. Productivity Simulation</a><span class="role">Researcher</span></div>
+              <p>A System Dynamics model of how sleep affects productivity, with a web tracker. I helped build and validate the simulation in R and Python.</p>
+            </li>
+            <li>
+              <div><span class="nolink">HAUPokemon</span><span class="role">EC2 developer</span></div>
+              <p>A distributed monster-tracking system on AWS EC2. I handled instance setup and deployment. The environment has since been shut down.</p>
+            </li>
+          </ul>
         </div>
       </div>
-      <p class="core-competencies centered-text">
-        <span class="span">Core</span> <span class="text-wrapper-5"> Competencies</span>
-      </p>
+    </section>
+
+    <!-- HOW I WORK -->
+    <section class="section section-tint" id="process">
+      <div class="wrap">
+        <p class="kicker">03 · How I work</p>
+        <h2>Agentic coding, with a human in charge</h2>
+        <ol class="steps">
+          <li>
+            <span class="step-n">1</span>
+            <h3>Plan</h3>
+            <p>Break the problem down and decide what "done" looks like before writing anything.</p>
+          </li>
+          <li>
+            <span class="step-n">2</span>
+            <h3>Build with agents</h3>
+            <p>AI coding agents help write the code while I steer the direction and the decisions.</p>
+          </li>
+          <li>
+            <span class="step-n">3</span>
+            <h3>Review and test</h3>
+            <p>I read every change, run it, and test it. Nothing ships just because an AI wrote it.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- LEARNING + TOOLBOX -->
+    <section class="section" id="learning">
+      <div class="wrap two-col">
+        <div>
+          <p class="kicker">04 · Currently learning</p>
+          <h2>Data analytics and data science</h2>
+          <p class="lead">I'm working my way into data analytics and data science, building on the pandas, SQL and R I've already used in past projects.</p>
+          <ul class="chips chips-lg"><li>pandas</li><li>SQL</li><li>R</li></ul>
+        </div>
+        <div>
+          <p class="kicker">Toolbox</p>
+          <div class="toolbox">
+            <div><h3>Languages</h3><p>Python, Java, JavaScript, SQL, HTML/CSS, Bash, R</p></div>
+            <div><h3>ML and vision</h3><p>PyTorch, TensorFlow/Keras, OpenCV, MediaPipe, scikit-learn, librosa</p></div>
+            <div><h3>Web and data</h3><p>React, Vite, Express, PostgreSQL, MySQL, Supabase, Docker</p></div>
+            <div><h3>Tools</h3><p>AWS EC2, Git, GitHub, VS Code, Google Colab, Android Studio</p></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CERTIFICATIONS -->
+    <section class="section section-tight" id="certifications">
+      <div class="wrap">
+        <p class="kicker">Certifications</p>
+        <ul class="certs">
+          <li><strong>CCNA: Introduction to Networks</strong><span>Cisco · 2026</span></li>
+          <li><strong>AI Fundamentals with IBM SkillsBuild</strong><span>2026</span></li>
+          <li><strong>Relational Database</strong><span>freeCodeCamp · 2025</span></li>
+          <li><strong>Responsive Web Design</strong><span>freeCodeCamp · 2024</span></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="section contact" id="contact">
+      <div class="wrap contact-inner">
+        <p class="kicker">05 · Contact</p>
+        <h2>Open to OJT and internship opportunities.</h2>
+        <a class="email" href="mailto:jlcalaguas@gmail.com">jlcalaguas@gmail.com</a>
+        <ul class="socials">
+          <li><a href="https://linkedin.com/in/justine-calaguas" target="_blank" rel="noopener">LinkedIn <span aria-hidden="true">↗</span></a></li>
+          <li><a href="https://github.com/JCalaguas" target="_blank" rel="noopener">GitHub <span aria-hidden="true">↗</span></a></li>
+          <li><a href="Calaguas_Justine_Resume.pdf" download>Résumé <span aria-hidden="true">↓</span></a></li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="wrap footer-inner">
+      <p>© 2026 Justine Luis Calaguas</p>
+      <p>Built with AI coding agents, reviewed by me. <a href="https://github.com/JCalaguas/Portfolio" target="_blank" rel="noopener">Source</a></p>
     </div>
+  </footer>
 
-  <!-- Expertise SECTION -->
-  <div id="expertise" class="skills">
-    <p class="dive"><span class="text-wrapper3">My</span> <span class="spam">Expertise</span></p>
-    <div id="table" class="table-group centered">
-        <table>
-            <tr>
-                <th>Languages</th>
-                <th>Syntax</th>
-                <th>Proficiency</th>
-                <th>Problem-Solving</th>
-            </tr>
-            <tr>
-                <td>Python</td>
-                <td>
-                    <div class="thermometer">
-                        <div class="level syntax-level" style="width: 90%;">
-                            <span class="percentage">90%</span>
-                        </div>
-                    </div>
-                </td>
-                <td>
-                    <div class="thermometer">
-                        <div class="level proficiency-level" style="width: 85%;">
-                            <span class="percentage">85%</span>
-                        </div>
-                    </div>
-                </td>
-                <td>
-                    <div class="thermometer">
-                        <div class="level problem-solving-level" style="width: 95%;">
-                            <span class="percentage">95%</span>
-                        </div>
-                    </div>
-                </td>
-            </tr>
-            <tr>
-                <td>Java</td>
-                <td>
-                    <div class="thermometer">
-                        <div class="level syntax-level" style="width: 65%;">
-                            <span class="percentage">65%</span>
-                        </div>
-                    </div>
-                </td>
-                <td>
-                    <div class="thermometer">
-                        <div class="level proficiency-level" style="width: 80%;">
-                            <span class="percentage">80%</span>
-                        </div>
-                    </div>
-                </td>
-                <td>
-                    <div class="thermometer">
-                        <div class="level problem-solving-level" style="width: 85%;">
-                            <span class="percentage">85%</span>
-                        </div>
-                    </div>
-                </td>
-            </tr>
-            <tr>
-                <td>HTML</td>
-                <td>
-                    <div class="thermometer">
-                        <div class="level syntax-level" style="width: 65%;">
-                            <span class="percentage">65%</span>
-                        </div>
-                    </div>
-                </td>
-                <td>
-                    <div class="thermometer">
-                        <div class="level proficiency-level" style="width: 70%;">
-                            <span class="percentage">70%</span>
-                        </div>
-                    </div>
-                </td>
-                <td>
-                    <div class="thermometer">
-                        <div class="level problem-solving-level" style="width: 60%;">
-                            <span class="percentage">60%</span>
-                        </div>
-                    </div>
-                </td>
-            </tr>
-            <tr>
-                <td>CSS</td>
-                <td>
-                    <div class="thermometer">
-                        <div class="level syntax-level" style="width: 55%;">
-                            <span class="percentage">55%</span>
-                        </div>
-                    </div>
-                </td>
-                <td>
-                    <div class="thermometer">
-                        <div class="level proficiency-level" style="width: 40%;">
-                            <span class="percentage">40%</span>
-                        </div>
-                    </div>
-                </td>
-                <td>
-                    <div class="thermometer">
-                        <div class="level problem-solving-level" style="width: 50%;">
-                            <span class="percentage">50%</span>
-                        </div>
-                    </div>
-                </td>
-            </tr>
-            <tr>
-                <td>JavaScript</td>
-                <td>
-                    <div class="thermometer">
-                        <div class="level syntax-level" style="width: 40%;">
-                            <span class="percentage">40%</span>
-                        </div>
-                    </div>
-                </td>
-                <td>
-                    <div class="thermometer">
-                        <div class="level proficiency-level" style="width: 30%;">
-                            <span class="percentage">30%</span>
-                        </div>
-                    </div>
-                </td>
-                <td>
-                    <div class="thermometer">
-                        <div class="level problem-solving-level" style="width: 35%;">
-                            <span class="percentage">35%</span>
-                        </div>
-                    </div>
-                </td>
-            </tr>
-        </table>
-    </div>
-</div>
-
-
-
-<!-- CONTACT SECTION -->
-<div id = "contact" class = "contact-container">
-  <h2 class="contact-title">Contact <span class="highlight">Me!</span></h2>
-  <form action = "#">
-    <div class ="user-details">
-      <div class = "input-box">
-        <span class = "details">First Name</span>
-        <input type="text" placeholder="Enter your first-name" required>
-      </div>
-      <div class = "input-box">
-        <span class = "details">Last Name</span>
-        <input type="text" placeholder="Enter your last-name" required>
-      </div>
-      <div class = "input-box">
-        <span class = "details">Email Address</span>
-        <input type="email" placeholder="Enter your Email Add." required>
-      </div>
-      <div class = "input-box">
-        <span class = "details">Phone No.</span>
-        <input type="tel" placeholder="Enter your Phone No." required>
-      </div>
-      <div class="input-box">
-        <span class="details">Message.</span>
-        <input type="text" class="message-input" placeholder="Input Message Here." required>
-    </div>
-      <div class="button"></div>
-      <input class="buttons" type="submit" value="Submit">
-  </form>
-</div>
-
-
-
-    <!-- FOOTER -->
-    <footer class="footer">
-      <p>Contact me at: <a href="mailto:justinecalaguas@gmail.com">JlCalaguas@gmail.com</a></p>
-    </footer>
-
-        <!-- External JS file -->
-        <script src="script.js"></script>
-  </body>
+  <script src="script.js"></script>
+</body>
 </html>
